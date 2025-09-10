@@ -1,29 +1,15 @@
 # MongoDB
-# Tabla de Contenidos
+**Tabla de contenido**
 
 - [Características Principales](#características-principales)
 - [Arquitectura pincripal](#arquitectura-principal)
 - [Ventajas y Casos de Uso](#ventajas-y-casos-de-uso)
 - [Comandos Básicos](#comandos-básicos)
-  - [Conexión](#conexión)
-  - [Administracion](#administracion)
 - [Operaciones CRUD](#operaciones-crud)
-  - [Create](#create)
-  - [Read](#read)
-  - [Update](#update)
-  - [Delete](#delete)
 - [Operadores de Consulta](#operadores-de-consulta)
-  - [Comparación](#comparación)
-  - [Lógicos](#lógicos)
-  - [Elementos](#elementos)
-  - [Evaluación](#evaluación)
-  - [Arrays](#arrays)
 - [Operadores de Actualización](#operadores-de-actualización)
 - [Agregación](#agregación)
-  - [Pipeline Stages](#pipeline-stages)
-  - [Operadores de Agregación](#operadores-de-agregación)
-  - [Métodos de Agregación Simple](#métodos-de-agregación-simple)
-  - [MapReduce](#mapreduce)
+
 
 
 ## Características Principales

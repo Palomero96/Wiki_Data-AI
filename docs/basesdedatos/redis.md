@@ -1,36 +1,14 @@
 # Redis
-# Tabla de Contenidos
+**Tabla de contenido**
 
 - [Características Principales](#características-principales)
 - [Arquitectura Principal](#arquitectura-principal)
 - [Ventajas y Casos de Uso](#ventajas-y-casos-de-uso)
 - [Comandos Básicos](#comandos-básicos)
-  - [Conexión](#conexión)
-  - [Administración](#administración)
 - [Operaciones CRUD](#operaciones-crud)
-  - [Create](#create)
-  - [Read](#read)
-  - [Update](#update)
-  - [Delete](#delete)
 - [Tipos de Datos](#tipos-de-datos)
-  - [Strings](#strings)
-  - [Hashes](#hashes)
-  - [Lists](#lists)
-  - [Sets](#sets)
-  - [Sorted Sets](#sorted-sets)
-  - [Bitmaps](#bitmaps)
-  - [HyperLogLogs](#hyperloglogs)
-  - [Streams](#streams)
 - [Operaciones Avanzadas](#operaciones-avanzadas)
-  - [Transacciones](#transacciones)
-  - [Pipelines](#pipelines)
-  - [Pub/Sub](#pubsub)
-  - [Scripts con Lua](#scripts-con-lua)
 - [Gestión y Monitorización](#gestión-y-monitorización)
-  - [Configuración](#configuración)
-  - [Clúster y Replicación](#clúster-y-replicación)
-  - [Persistencia y RDB/AOF](#persistencia-y-rdb-aof)
-  - [Monitorización y métricas](#monitorización-y-métricas)
 - [Optimización y Buenas Prácticas](#optimización-y-buenas-prácticas)
 
 

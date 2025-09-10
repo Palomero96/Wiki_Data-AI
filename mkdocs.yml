@@ -1,1 +1,51 @@
-site_name: My Docs
+site_name: Wiki_Data-AI
+site_url: https://ejemplo.com/wiki-data-ai
+site_author: Palomero96
+#site_description: Documentación de Datos&IA
+#repo_url: https://github.com/tu-usuario/wiki-data-ai
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+  palette:
+      - scheme: slate
+        primary: indigo
+
+nav:
+  
+  - Bases de datos:
+    - General: basesdedatos/general.md
+    - Cassandra: basesdedatos/cassandra.md
+    - MongoDB: basesdedatos/mongodb.md
+    - Neo4j: basesdedatos/neo4j.md
+    - Redis: basesdedatos/redis.md
+  - Datos:
+    - Análisis EDA: datos/analisisEDA.md
+    - Limpieza y transformación: datos/limpiezatransformacion.md
+  - Estadística:
+    - Overview: estadistica/overview.md
+    - Probabilidad y distribuciones: estadistica/probabilidad-y-distribuciones.md
+    - Regresión y correlación: estadistica/regresion-correlacion.md
+    - Análisis multivariante: estadistica/analisis-multivariante.md
+    - Inferencia estadística: estadistica/inferencia-estadistica.md
+  - Inteligencia Artificial:
+    - Overview: inteligenciaartificial/overview.md
+    - Índice: inteligenciaartificial/index.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - extra
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+

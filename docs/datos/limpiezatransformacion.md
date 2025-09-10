@@ -1,6 +1,6 @@
 # Metodología de Limpieza y Transformación de Datos en Python
 
-## Tabla de Contenidos
+**Tabla de contenido**
 
 1. [Revisión y Corrección de Tipos de Datos](#revisión-y-corrección-de-tipos-de-datos)
 2. [Estandarización de Nombres y Formatos](#estandarización-de-nombres-y-formatos)
@@ -127,11 +127,5 @@ print(df.isnull().sum())
 
 # Descripción estadística
 print(df.describe(include='all'))
-
-```
-
-## 3. Detección y Gestión de Duplicados
-Detectar duplicados y decidir si se eliminan según la relevancia para el análisis.
-```python
 
 ```

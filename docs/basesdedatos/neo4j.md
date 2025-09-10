@@ -1,24 +1,12 @@
 # Neo4j
-
-
-# Tabla de Contenidos para Neo4j
+**Tabla de contenido**
 
 - [Características Principales](#características-principales)
 - [Arquitectura Principal](#arquitectura-principal)
 - [Ventajas y Casos de Uso](#ventajas-y-casos-de-uso)
 - [Comandos Básicos](#comandos-básicos)
-  - [Conexión](#conexión)
-  - [Administración](#administración)
 - [Operaciones CRUD](#operaciones-crud)
-  - [Create](#create)
-  - [Read](#read)
-  - [Update](#update)
-  - [Delete](#delete)
 - [Operadores de Consulta y Filtrado](#operadores-de-consulta-y-filtrado)
-  - [Comparación](#comparación)
-  - [Lógicos](#lógicos)
-  - [Patrones de Grafos](#patrones-de-grafos)
-  - [Funciones de Agregación](#funciones-de-agregación)
 - [Operaciones de Relación](#operaciones-de-relación)
 - [Indexación y Constraints](#indexación-y-constraints)
 - [Transacciones y Bloqueos](#transacciones-y-bloqueos)

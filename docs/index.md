@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# 🚀 Bienvenido a Wiki_Data-AI
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Tu recurso centralizado para documentación sobre Ciencia de Datos, Bases de Datos, Estadística e Inteligencia Artificial hecha por David Palomero.
 
-## Commands
+## 📖 ¿Qué encontrarás aquí?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **Bases de Datos**:  Cassandra, MongoDB, Neo4j, Redis y más.
+- **Procesamiento de Datos**: Técnicas de limpieza, transformación y análisis exploratorio de datos.
+- **Estadística**: Conceptos básicos de probabilidad hasta análisis multivariante e inferencia estadística.
+- **Inteligencia Artificial**: Introducción a la IA, machine learning, deep learning y más.

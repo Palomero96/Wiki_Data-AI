@@ -1,4 +1,4 @@
-# 📊 Estadística para Ciencia de Datos e IA
+#  Estadística para Ciencia de Datos e IA
 
 ## Tabla de Contenidos
 

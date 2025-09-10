@@ -1,26 +1,13 @@
 # CassandraDB
-
-# Tabla de Contenidos
+**Tabla de contenido**
 
 - [Características Principales](#características-principales)
 - [Arquitectura Principal](#arquitectura-principal)
 - [Ventajas y Casos de Uso](#ventajas-y-casos-de-uso)
 - [Comandos Básicos](#comandos-básicos)
-  - [Conexión](#conexión)
-  - [Administración](#administración)
 - [Operaciones CRUD](#operaciones-crud)
-  - [Create](#create)
-  - [Read](#read)
-  - [Update](#update)
-  - [Delete](#delete)
 - [Consultas con CQL](#consultas-con-cql)
-  - [Cláusulas Básicas](#cláusulas-básicas)
-  - [Filtros y Condiciones](#filtros-y-condiciones)
-  - [Funciones de Agregación](#funciones-de-agregación)
 - [Gestión de Esquema](#gestión-de-esquema)
-  - [Creación de Keyspaces](#creación-de-keyspaces)
-  - [Creación y Alteración de Tablas](#creación-y-alteración-de-tablas)
-  - [Índices y Materialized Views](#índices-y-materialized-views)
 - [Optimización y Buenas Prácticas](#optimización-y-buenas-prácticas)
 
 ## Características Principales
