@@ -2,7 +2,7 @@ site_name: Wiki_Data-AI
 site_url: https://palomero96.github.io/Wiki_Data-AI/
 site_author: Palomero96
 site_description: Documentación de Datos&IA
-repo_url: https://github.com/palomero96/wiki-data-ai
+repo_url: https://github.com/Palomero96/Wiki_Data-AI
 
 theme:
   name: material

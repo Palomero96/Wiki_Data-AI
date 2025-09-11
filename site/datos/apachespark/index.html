@@ -12,13 +12,13 @@
         <meta name="author" content="Palomero96">
       
       
-        <link rel="canonical" href="https://palomero96.github.io/Wiki_Data-AI/estadistica/inferencia-estadistica/">
+        <link rel="canonical" href="https://palomero96.github.io/Wiki_Data-AI/datos/apachespark/">
       
       
-        <link rel="prev" href="../analisis-multivariante/">
+        <link rel="prev" href="../analisisEDA/">
       
       
-        <link rel="next" href="../../inteligenciaartificial/overview/">
+        <link rel="next" href="../kafka_hive_impala/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Inferencia estadística - Wiki_Data-AI</title>
+        <title>Apache Spark - Wiki_Data-AI</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#inferencia-estadistica" class="md-skip">
+        <a href="#apache-spark-con-python-pyspark" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Inferencia estadística
+              Apache Spark
             
           </span>
         </div>
@@ -229,11 +229,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../datos/limpiezatransformacion/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../limpiezatransformacion/" class="md-tabs__link">
           
   
   
@@ -249,13 +251,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../overview/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../estadistica/overview/" class="md-tabs__link">
           
   
   
@@ -501,26 +501,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -533,7 +538,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Datos
@@ -547,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datos/limpiezatransformacion/" class="md-nav__link">
+      <a href="../limpiezatransformacion/" class="md-nav__link">
         
   
   
@@ -570,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datos/analisisEDA/" class="md-nav__link">
+      <a href="../analisisEDA/" class="md-nav__link">
         
   
   
@@ -590,10 +595,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../datos/apachespark/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Apache Spark
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -604,6 +631,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-instalacion-y-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Instalación y Configuración
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-rdds-resilient-distributed-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. RDDs (Resilient Distributed Datasets)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-dataframes-y-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. DataFrames y SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-transformaciones-y-acciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Transformaciones y Acciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ejemplo-de-pipeline-de-procesamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Ejemplo de Pipeline de Procesamiento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-ventajas-y-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Ventajas y Casos de Uso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -616,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datos/kafka_hive_impala/" class="md-nav__link">
+      <a href="../kafka_hive_impala/" class="md-nav__link">
         
   
   
@@ -643,31 +753,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -680,7 +785,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Estadística
@@ -694,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../estadistica/overview/" class="md-nav__link">
         
   
   
@@ -717,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../probabilidad-y-distribuciones/" class="md-nav__link">
+      <a href="../../estadistica/probabilidad-y-distribuciones/" class="md-nav__link">
         
   
   
@@ -740,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../regresion-correlacion/" class="md-nav__link">
+      <a href="../../estadistica/regresion-correlacion/" class="md-nav__link">
         
   
   
@@ -763,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../analisis-multivariante/" class="md-nav__link">
+      <a href="../../estadistica/analisis-multivariante/" class="md-nav__link">
         
   
   
@@ -783,30 +888,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Inferencia estadística
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../estadistica/inferencia-estadistica/" class="md-nav__link">
         
   
   
@@ -817,102 +902,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#inferencia-estadistica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Inferencia Estadística
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Inferencia Estadística">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tipos-de-inferencia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tipos de Inferencia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tipos-de-pruebas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tipos de Pruebas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conceptos-clave" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conceptos Clave
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-practico" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplo Práctico
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-2-prueba-de-proporciones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplo 2: Prueba de proporciones
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-3-intervalo-de-confianza-para-la-media" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplo 3: Intervalo de confianza para la media
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-4-anova-para-comparar-mas-de-dos-grupos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplo 4: ANOVA para comparar más de dos grupos
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1199,6 +1188,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1207,80 +1198,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inferencia-estadistica" class="md-nav__link">
+  <a href="#1-introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      Inferencia Estadística
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Inferencia Estadística">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tipos-de-inferencia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tipos de Inferencia
+      1. Introducción
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#tipos-de-pruebas" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#2-instalacion-y-configuracion" class="md-nav__link">
     <span class="md-ellipsis">
-      Tipos de Pruebas
+      2. Instalación y Configuración
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#conceptos-clave" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#3-rdds-resilient-distributed-datasets" class="md-nav__link">
     <span class="md-ellipsis">
-      Conceptos Clave
+      3. RDDs (Resilient Distributed Datasets)
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-practico" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#4-dataframes-y-sql" class="md-nav__link">
     <span class="md-ellipsis">
-      Ejemplo Práctico
+      4. DataFrames y SQL
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-2-prueba-de-proporciones" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#5-transformaciones-y-acciones" class="md-nav__link">
     <span class="md-ellipsis">
-      Ejemplo 2: Prueba de proporciones
+      5. Transformaciones y Acciones
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-3-intervalo-de-confianza-para-la-media" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#6-ejemplo-de-pipeline-de-procesamiento" class="md-nav__link">
     <span class="md-ellipsis">
-      Ejemplo 3: Intervalo de confianza para la media
+      6. Ejemplo de Pipeline de Procesamiento
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-4-anova-para-comparar-mas-de-dos-grupos" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#7-ventajas-y-casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Ejemplo 4: ANOVA para comparar más de dos grupos
+      7. Ventajas y Casos de Uso
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1303,107 +1279,123 @@
   
 
 
-  <h1>Inferencia estadística</h1>
-
-<h2 id="inferencia-estadistica">Inferencia Estadística<a class="headerlink" href="#inferencia-estadistica" title="Permanent link">&para;</a></h2>
-<p>La inferencia estadística se centra en hacer generalizaciones o predicciones sobre una población a partir de una muestra de datos. Es fundamental para validar modelos, tomar decisiones y evaluar hipótesis.</p>
-<h3 id="tipos-de-inferencia">Tipos de Inferencia<a class="headerlink" href="#tipos-de-inferencia" title="Permanent link">&para;</a></h3>
+<h1 id="apache-spark-con-python-pyspark">Apache Spark con Python (PySpark)<a class="headerlink" href="#apache-spark-con-python-pyspark" title="Permanent link">&para;</a></h1>
+<p>Apache Spark es un motor de <strong>procesamiento distribuido</strong> de datos a gran escala, rápido y eficiente, ampliamente utilizado en Big Data y Machine Learning.</p>
+<hr />
+<h2 id="1-introduccion">1. Introducción<a class="headerlink" href="#1-introduccion" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Estimación</strong>: Determinar un valor aproximado para un parámetro poblacional usando estadísticas muestrales.</li>
-<li><strong>Punto</strong>: Un único valor (ej. media muestral).</li>
-<li>
-<p><strong>Intervalo</strong>: Rango de valores con un nivel de confianza (ej. intervalo de confianza 95%).</p>
-</li>
-<li>
-<p><strong>Pruebas de Hipótesis</strong>: Evaluar afirmaciones sobre la población basándose en la evidencia de la muestra.</p>
-</li>
-<li><strong>Hipótesis nula (H₀)</strong>: Afirmación a probar (generalmente de "no efecto" o "sin diferencia").</li>
-<li><strong>Hipótesis alternativa (H₁)</strong>: Lo que se busca demostrar.</li>
-<li><strong>Estadístico de prueba</strong>: Calculado a partir de la muestra (ej. t, z, chi-cuadrado).</li>
-<li><strong>Valor p</strong>: Probabilidad de obtener resultados al menos tan extremos como los observados, bajo H₀.</li>
-<li><strong>Nivel de significancia (α)</strong>: Umbral para rechazar H₀ (común: 0.05).</li>
-<li><strong>Decisión</strong>: Rechazar o no H₀ según p &lt; α.</li>
+<li>Procesamiento distribuido en clusters.</li>
+<li>Permite trabajar con <strong>grandes volúmenes de datos</strong> en memoria.</li>
+<li>Compatible con <strong>Python (PySpark), Scala, Java y R</strong>.</li>
 </ul>
-<h3 id="tipos-de-pruebas">Tipos de Pruebas<a class="headerlink" href="#tipos-de-pruebas" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Paramétricas</strong> (asumen distribución normal u otras condiciones):</li>
-<li>t de Student: Comparar medias de una o dos muestras.</li>
-<li>ANOVA: Comparar medias de más de dos grupos.</li>
-<li>Z-test: Comparación de medias o proporciones con gran tamaño de muestra.</li>
-<li><strong>No paramétricas</strong> (sin asumir distribución):</li>
-<li>Chi-cuadrado: Asociaciones entre variables categóricas.</li>
-<li>Mann-Whitney U: Comparación de medianas entre dos grupos independientes.</li>
-<li>Wilcoxon: Comparación de medianas en muestras pareadas.</li>
-</ul>
-<h3 id="conceptos-clave">Conceptos Clave<a class="headerlink" href="#conceptos-clave" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Error Tipo I (α)</strong>: Rechazar H₀ cuando es verdadera.</li>
-<li><strong>Error Tipo II (β)</strong>: No rechazar H₀ cuando es falsa.</li>
-<li><strong>Potencia estadística (1-β)</strong>: Probabilidad de detectar un efecto real.</li>
-</ul>
-<h3 id="ejemplo-practico">Ejemplo Práctico<a class="headerlink" href="#ejemplo-practico" title="Permanent link">&para;</a></h3>
-<p>Supongamos que queremos probar si un nuevo medicamento reduce la presión arterial:
-<div class="highlight"><pre><span></span><code><span class="c1"># Hipótesis</span>
-<span class="c1"># H0: No hay cambio en la presión arterial</span>
-<span class="c1"># H1: Hay reducción significativa</span>
+<hr />
+<h2 id="2-instalacion-y-configuracion">2. Instalación y Configuración<a class="headerlink" href="#2-instalacion-y-configuracion" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Instalar PySpark via pip</span>
+pip<span class="w"> </span>install<span class="w"> </span>pyspark
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">stats</span>
-
-<span class="n">control</span> <span class="o">=</span> <span class="p">[</span><span class="mi">120</span><span class="p">,</span> <span class="mi">125</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">118</span><span class="p">,</span> <span class="mi">122</span><span class="p">]</span>
-<span class="n">tratamiento</span> <span class="o">=</span> <span class="p">[</span><span class="mi">115</span><span class="p">,</span> <span class="mi">118</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">117</span><span class="p">,</span> <span class="mi">116</span><span class="p">]</span>
-
-<span class="n">t_stat</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">control</span><span class="p">,</span> <span class="n">tratamiento</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">p_value</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rechazamos H0: el tratamiento tiene efecto&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No podemos rechazar H0&quot;</span><span class="p">)</span>
-</code></pre></div></p>
-<h3 id="ejemplo-2-prueba-de-proporciones">Ejemplo 2: Prueba de proporciones<a class="headerlink" href="#ejemplo-2-prueba-de-proporciones" title="Permanent link">&para;</a></h3>
-<p>Supongamos que una empresa de marketing quiere saber si una nueva campaña aumenta la proporción de clientes que hacen clic en un anuncio.  </p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Hipótesis</span>
-<span class="c1"># H0: Proporción de clics igual a la anterior campaña (p0 = 0.1)</span>
-<span class="c1"># H1: Proporción de clics mayor a 0.1</span>
-
-<span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.stats.proportion</span><span class="w"> </span><span class="kn">import</span> <span class="n">proportions_ztest</span>
-
-<span class="c1"># Número de clics y tamaño de muestra</span>
-<span class="n">clicks</span> <span class="o">=</span> <span class="mi">25</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">200</span>
-<span class="n">p0</span> <span class="o">=</span> <span class="mf">0.1</span>
-
-<span class="n">stat</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">proportions_ztest</span><span class="p">(</span><span class="n">clicks</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">p0</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s1">&#39;larger&#39;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">p_value</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rechazamos H0: la campaña aumentó la proporción de clics&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No hay evidencia suficiente para afirmar que la campaña aumentó clics&quot;</span><span class="p">)</span>
+<span class="c1"># Comprobar versión</span>
+python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import pyspark; print(pyspark.__version__)&quot;</span>
 </code></pre></div>
-<h3 id="ejemplo-3-intervalo-de-confianza-para-la-media">Ejemplo 3: Intervalo de confianza para la media<a class="headerlink" href="#ejemplo-3-intervalo-de-confianza-para-la-media" title="Permanent link">&para;</a></h3>
-<p>Queremos estimar la media de horas de estudio semanal de estudiantes con un 95% de confianza.
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">stats</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparkSession</span>
 
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
-<span class="n">mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">sem</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">sem</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># error estándar de la media</span>
+<span class="c1"># Crear sesión Spark</span>
+<span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span> \
+    <span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&quot;EjemploSpark&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="3-rdds-resilient-distributed-datasets">3. RDDs (Resilient Distributed Datasets)<a class="headerlink" href="#3-rdds-resilient-distributed-datasets" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Estructura de datos fundamental de Spark.</li>
+<li>Inmutable, distribuida y tolerante a fallos.</li>
+<li>
+<p>Operaciones principales:</p>
+</li>
+<li>
+<p><strong>Transformaciones</strong>: map, filter, flatMap</p>
+</li>
+<li><strong>Acciones</strong>: collect, count, reduce</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">rdd</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sparkContext</span><span class="o">.</span><span class="n">parallelize</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">rdd2</span> <span class="o">=</span> <span class="n">rdd</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rdd2</span><span class="o">.</span><span class="n">collect</span><span class="p">())</span>
+</code></pre></div>
+<hr />
+<h2 id="4-dataframes-y-sql">4. DataFrames y SQL<a class="headerlink" href="#4-dataframes-y-sql" title="Permanent link">&para;</a></h2>
+<ul>
+<li>API más alta que RDD, optimizada con <strong>Catalyst optimizer</strong>.</li>
+<li>Permite consultas <strong>SQL</strong> y operaciones <strong>tipo pandas</strong>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Nombre&quot;</span><span class="p">,</span> <span class="s2">&quot;Edad&quot;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="p">)</span>
 
-<span class="c1"># Intervalo de confianza 95%</span>
-<span class="n">conf_int</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">interval</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">sem</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Media estimada: </span><span class="si">{</span><span class="n">mean</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> horas, Intervalo de confianza 95%: </span><span class="si">{</span><span class="n">conf_int</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div></p>
-<h3 id="ejemplo-4-anova-para-comparar-mas-de-dos-grupos">Ejemplo 4: ANOVA para comparar más de dos grupos<a class="headerlink" href="#ejemplo-4-anova-para-comparar-mas-de-dos-grupos" title="Permanent link">&para;</a></h3>
-<p>Comparar el rendimiento académico de estudiantes en tres métodos de enseñanza diferentes.
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
+<span class="c1"># Mostrar datos</span>
+<span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="n">grupo1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">85</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">]</span>
-<span class="n">grupo2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">78</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">81</span><span class="p">]</span>
-<span class="n">grupo3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">92</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">94</span><span class="p">,</span> <span class="mi">93</span><span class="p">]</span>
+<span class="c1"># SQL</span>
+<span class="n">df</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">)</span>
+<span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM personas WHERE Edad &gt; 26&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="5-transformaciones-y-acciones">5. Transformaciones y Acciones<a class="headerlink" href="#5-transformaciones-y-acciones" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Transformaciones</strong>: no ejecutan nada hasta que se llama a una acción.</p>
+</li>
+<li>
+<p><code>select</code>, <code>filter</code>, <code>withColumn</code>, <code>groupBy</code></p>
+</li>
+<li>
+<p><strong>Acciones</strong>: devuelven resultados al driver.</p>
+</li>
+<li>
+<p><code>collect</code>, <code>count</code>, <code>show</code>, <code>take</code></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">26</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="s2">&quot;Edad&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="6-ejemplo-de-pipeline-de-procesamiento">6. Ejemplo de Pipeline de Procesamiento<a class="headerlink" href="#6-ejemplo-de-pipeline-de-procesamiento" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.ml.feature</span><span class="w"> </span><span class="kn">import</span> <span class="n">VectorAssembler</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.ml.regression</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
 
-<span class="n">f_stat</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">f_oneway</span><span class="p">(</span><span class="n">grupo1</span><span class="p">,</span> <span class="n">grupo2</span><span class="p">,</span> <span class="n">grupo3</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">p_value</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rechazamos H0: existe diferencia significativa entre los grupos&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No hay evidencia suficiente de diferencias entre los grupos&quot;</span><span class="p">)</span>
-</code></pre></div></p>
+<span class="c1"># Dataset ejemplo</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">)]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;x1&quot;</span><span class="p">,</span><span class="s2">&quot;x2&quot;</span><span class="p">,</span><span class="s2">&quot;y&quot;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="p">)</span>
+
+<span class="c1"># Crear vector de características</span>
+<span class="n">assembler</span> <span class="o">=</span> <span class="n">VectorAssembler</span><span class="p">(</span><span class="n">inputCols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;x1&quot;</span><span class="p">,</span><span class="s2">&quot;x2&quot;</span><span class="p">],</span> <span class="n">outputCol</span><span class="o">=</span><span class="s2">&quot;features&quot;</span><span class="p">)</span>
+<span class="n">df_vector</span> <span class="o">=</span> <span class="n">assembler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="c1"># Entrenar modelo de regresión lineal</span>
+<span class="n">lr</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">(</span><span class="n">featuresCol</span><span class="o">=</span><span class="s2">&quot;features&quot;</span><span class="p">,</span> <span class="n">labelCol</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">lr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_vector</span><span class="p">)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df_vector</span><span class="p">)</span>
+<span class="n">predictions</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="7-ventajas-y-casos-de-uso">7. Ventajas y Casos de Uso<a class="headerlink" href="#7-ventajas-y-casos-de-uso" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Ventajas</strong></p>
+</li>
+<li>
+<p>Procesamiento distribuido en memoria → rápido.</p>
+</li>
+<li>API unificada: RDD, DataFrames, SQL, MLlib, GraphX, Streaming.</li>
+<li>Escalabilidad: de laptops a clusters grandes.</li>
+<li>
+<p><strong>Casos de uso</strong></p>
+</li>
+<li>
+<p>ETL de grandes datasets.</p>
+</li>
+<li>Machine Learning distribuido.</li>
+<li>Procesamiento de logs, sensores y streaming.</li>
+</ul>
 
 
 
