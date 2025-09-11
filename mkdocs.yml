@@ -11,6 +11,7 @@ theme:
     - navigation.sections
     - search.suggest
     - search.highlight
+    - mathjax
   palette:
       - scheme: slate
         primary: indigo
@@ -24,8 +25,10 @@ nav:
     - Neo4j: basesdedatos/neo4j.md
     - Redis: basesdedatos/redis.md
   - Datos:
-    - Análisis EDA: datos/analisisEDA.md
     - Limpieza y transformación: datos/limpiezatransformacion.md
+    - Análisis EDA: datos/analisisEDA.md
+    - Apache Spark: datos/apachespark.md
+    - Kafka, Hive e Impala: datos/kafka_hive_impala.md
   - Estadística:
     - Overview: estadistica/overview.md
     - Probabilidad y distribuciones: estadistica/probabilidad-y-distribuciones.md
@@ -34,7 +37,14 @@ nav:
     - Inferencia estadística: estadistica/inferencia-estadistica.md
   - Inteligencia Artificial:
     - Overview: inteligenciaartificial/overview.md
-    - Índice: inteligenciaartificial/index.md
+    - Aprendizaje Supervisado: inteligenciaartificial/aprendizajesupervisado.md
+    - Evaluación Aprendizaje Supervisado: inteligenciaartificial/evaluacionsupervisado.md
+    - Aprendizaje No Supervisado: inteligenciaartificial/aprendizajenosupervisado.md
+    - Evaluación Aprendizaje No Supervisado: inteligenciaartificial/evaluacionnosupervisado.md
+    - Lenguaje natural y Modelos de Lenguaje: inteligenciaartificial/lenguajenaturalymodelos.md
+    - Tokens, vectores y embeddings: inteligenciaartificial/tokens_embeddings_vectores_nlp.md
+    - Sistema de recomendación: inteligenciaartificial/sistemasrecomendacion.md
+    - Otras tecnicas: inteligenciaartificial/otrastecnicas.md
 
 markdown_extensions:
   - admonition
